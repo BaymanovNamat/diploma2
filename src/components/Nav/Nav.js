@@ -1,19 +1,34 @@
+import Logo from "../ui/Logo/Logo";
 import "./Nav.css";
+import Navitem from "./Navitem/Navitem";
 
 
 function Nav() {
   return (
     <nav className="Nav">
-      <div>
-        Fresh Coffee Beans
-      </div>
+      <Logo/>
+
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Categories</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Products</a></li>
-        <li><a href="#">Contacts</a></li>
-        <li><a href="#">Interesting facts</a></li>
+        <Navitem url="/" active>
+          Home
+        </Navitem>
+        <Navitem url="/" >
+        Categories
+        </Navitem>
+        <Navitem url="/">
+        About
+        </Navitem>
+        <Navitem url="/">
+        Products
+        </Navitem>
+        <Navitem url="/">
+        Contacts
+        </Navitem>
+        <Navitem url="/">
+        Interesting facts
+        </Navitem>
+
+
       </ul>
     </nav>
   );

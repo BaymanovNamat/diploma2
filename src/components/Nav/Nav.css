@@ -1,7 +1,7 @@
 .Nav {
   display: flex;
   background-color: coral;
-  color: white;
+  color: rgb(255, 255, 255);
   font-family: Georgia, 'Times New Roman', Times, serif;
   align-items: center;
   justify-content: space-between;
@@ -14,14 +14,3 @@
   display: flex;
 }
 
-.Nav a {
-  display: block;
-  padding: .5rem 1rem;
-  color: white;
-  font-size: .8rem;
-  text-decoration: none;
-}
-
-.Nav a:hover {
-  background-color: rgba(255, 255, 255, .1);
-}
