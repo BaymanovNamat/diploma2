@@ -1,17 +1,14 @@
+import { NavLink } from "react-router-dom";
 import "./Navitem.css";
 
 
 function Navitem(props) {
-  const classNames = [];
-  if (props.active) {
-    classNames.push("active");
-  }
-
+  
   return (
     <li className="Navitem">
-      <a href={props.url} className={classNames.join(" ")}>
+      <NavLink to={props.url} active={props.active}>
         {props.children}
-      </a>
+      </NavLink>
     </li>
   );
 };

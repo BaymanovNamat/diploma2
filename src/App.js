@@ -1,3 +1,4 @@
+import { Route, Routes } from "react-router-dom";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Nav from "./components/Nav/Nav";
@@ -15,12 +16,20 @@ function App() {
 
       <Header/>
 
-      <Home/>
-      <Categories/>
-      <About/>
-      <Product/>
-      <Contacts/>
-      <Interesting/>
+      
+
+
+      <Routes>
+
+        <Route path="/" element={<Home/>}/>
+
+        <Route path="product" element={<Product/>}/>
+        <Route path="/categories" element={<Categories/>}/>
+        <Route path="/about" element={<About/>}/>
+        <Route path="/contacts" element={<Contacts/>}/>
+        <Route path="/interesting" element={<Interesting/>}/>
+
+      </Routes>
       
       <Footer/>
     </div>

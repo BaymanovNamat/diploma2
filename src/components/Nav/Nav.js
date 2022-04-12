@@ -12,19 +12,19 @@ function Nav() {
         <Navitem url="/" active>
           Home
         </Navitem>
-        <Navitem url="/" >
+        <Navitem url="/categories" >
         Categories
         </Navitem>
-        <Navitem url="/">
+        <Navitem url="/about">
         About
         </Navitem>
-        <Navitem url="/">
+        <Navitem url="/product">
         Products
         </Navitem>
-        <Navitem url="/">
+        <Navitem url="/contacts">
         Contacts
         </Navitem>
-        <Navitem url="/">
+        <Navitem url="/interesting">
         Interesting facts
         </Navitem>
 
