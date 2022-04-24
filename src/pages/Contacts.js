@@ -1,13 +1,12 @@
+import Header from "../components/Header/Header";
+import headerImage from "../assets/contact.jpg";
 function Contacts(props) {
   return (
-    <article>
-    <h2>
-      This is Contacts page
-    </h2>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis autem quos cupiditate eaque exercitationem minus iure sunt beatae earum id iste voluptate sequi itaque, possimus eos ea atque. Voluptas, molestiae.
-    </p>
-  </article>
+    <>
+      <Header title={"Pick your favorite coffee!"} image={headerImage}>
+        The fruits; cherries or berries, most commonly contain two stones with their flat sides together. A small percentage of cherries contain a single seed, instead of the usual two. This is called a "peaberry".
+      </Header>
+    </>
   );
 };
 

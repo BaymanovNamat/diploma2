@@ -1,13 +1,12 @@
+import Header from "../components/Header/Header";
+import headerImage from "../assets/product.jpg";
 function Product(props) {
   return (
-    <article>
-    <h2>
-      This is Products page
-    </h2>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis autem quos cupiditate eaque exercitationem minus iure sunt beatae earum id iste voluptate sequi itaque, possimus eos ea atque. Voluptas, molestiae.
-    </p>
-  </article>
+    <>
+      <Header title={"We have good quality products!"} image={headerImage}>
+        The peaberry occurs only between 10% and 15% of the time, and it is a fairly common (yet scientifically unproven) belief that they have more flavour than normal coffee beans.[3] Like Brazil nuts (a seed) and white rice, coffee beans consist mostly of endosperm.
+      </Header>
+    </>
   );
 };
 
