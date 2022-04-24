@@ -6,30 +6,32 @@ import Navitem from "./Navitem/Navitem";
 function Nav() {
   return (
     <nav className="Nav">
-      <Logo/>
+      <div className="container">
+        <Logo/>
 
-      <ul>
-        <Navitem url="/" active>
-          Home
-        </Navitem>
-        <Navitem url="/categories" >
-        Categories
-        </Navitem>
-        <Navitem url="/about">
-        About
-        </Navitem>
-        <Navitem url="/product">
-        Products
-        </Navitem>
-        <Navitem url="/contacts">
-        Contacts
-        </Navitem>
-        <Navitem url="/interesting">
-        Interesting facts
-        </Navitem>
+        <ul>
+          <Navitem url="/" active>
+            Home
+          </Navitem>
+          <Navitem url="/categories" >
+          Categories
+          </Navitem>
+          <Navitem url="/about">
+          About
+          </Navitem>
+          <Navitem url="/product">
+          Products
+          </Navitem>
+          <Navitem url="/contacts">
+          Contacts
+          </Navitem>
+          <Navitem url="/interesting">
+          Interesting facts
+          </Navitem>
 
 
-      </ul>
+        </ul>
+      </div>
     </nav>
   );
 }
