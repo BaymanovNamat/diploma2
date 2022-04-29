@@ -5,10 +5,10 @@ function ProductItem({ product }) {
   return ( 
     <>
       <div className={classes.ProductItem}>
-        <img src={product.image}/>
-
+        <img src={product.image} alt="#"/>
+        
         <section>
-          <Link to={product.path}>
+          <Link to={product.productId}>
             {product.title}
           </Link>
 

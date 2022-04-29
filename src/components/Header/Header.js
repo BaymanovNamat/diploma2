@@ -1,13 +1,13 @@
 import "./Header.css";
 
 
-function Header({image, title, children}) {
+function Header({image, title, children, coverImage}) {
 
 
   return (
     <header className="Header">
       <>
-        <img src={image}/>
+        <img src={image} alt="#"/>
         <section>
           <h2>
             {title}

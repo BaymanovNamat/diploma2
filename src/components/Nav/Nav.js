@@ -13,7 +13,7 @@ function Nav() {
           <Navitem url="/" active>
             Home
           </Navitem>
-          <Navitem url="/product">
+          <Navitem url="/products">
           Products
           </Navitem>
           <Navitem url="/contacts">
