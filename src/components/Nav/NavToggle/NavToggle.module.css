@@ -1,0 +1,80 @@
+@import "../../Nav/Nav.module.css";
+
+
+.NavToggle {
+  /* border: 3px solid green; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 1rem 1rem;
+
+  display: none;
+}
+
+
+.NavToggle .burger {
+  border-top: 3px solid rgb(0, 0, 0);
+  padding: .8rem;
+  position: relative;
+  bottom: -15px;
+  left: 0;
+
+  /* color: red; */
+  
+}
+
+.burger .toggle {
+  color: rgb(230, 2, 2);
+}
+.NavToggle .burger:hover {
+  /* transition-property: padding; */
+  border-top-color: transparent;
+}
+
+
+
+
+.NavToggle .burger::before {
+  content: "";
+  border-bottom: 3px solid rgb(0, 0, 0);
+  padding: .8rem;
+  position: absolute;
+  top: -37px;
+  left: 0;
+
+}
+
+.NavToggle .burger:hover::before {
+  transform: skewY(40deg);
+  top: -28px;
+}
+
+.NavToggle .burger::after {
+  content: "";
+  border-bottom: 3px solid black;
+  padding: .8rem;
+  position: absolute;
+  bottom: 18px;
+  right: 0;
+}
+.NavToggle .burger:hover:after {
+  transform: skewY(-40deg);
+  bottom: 24px;
+}
+
+
+@media (max-width: 600px) {
+  .NavToggle {
+    display: block;
+  }
+
+  .Nav ul {
+    display: block;
+    border: 2px solid black;
+    width: 120px;
+    text-align: center;
+  } 
+}
+
+

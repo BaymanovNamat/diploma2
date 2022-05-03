@@ -1,0 +1,161 @@
+.Nav {
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+
+  height: 60px;
+
+  background-color: coral;
+  color: rgb(255, 255, 255);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  
+  
+  padding: 0 2rem;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+}
+.Nav .logo {
+  position: relative;
+  left: -15px;
+  top: -5px;
+  flex: 1 1 0;
+}
+.Nav .container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 1rem;
+
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+.Nav .list {
+  list-style-type: none;
+  padding: 0;
+  margin-right: 45px;
+  display: flex;
+
+  position: relative;
+  top: -5px;
+}
+
+.Nav .toggle {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .Nav {
+    height: 60px;
+  }
+  .Nav .logo {
+    position: relative;
+    top: -45px;
+  }
+  .Nav .list {
+    display: block;
+    
+    position: relative;
+    top: 45px;
+    right: -1000px;
+    z-index: 1;
+
+    background-color: rgb(108, 24, 233);
+    
+  }
+  .list a {
+    display: block;
+  }
+
+  .Nav .list.active {
+    display: block;
+    position: relative;
+    /* top: 0; */
+    right: -30px;
+
+    /* margin-right: 110px; */
+    /* padding-right: 25px; */
+    width: 150px;
+
+    /* text-align: center; */
+
+    transition: all .4s;
+  }
+  
+  .Nav .toggle {
+    display: inline-block;
+    position: relative;
+    top: -45px;
+    right: 42px;
+    width: 30px;
+    z-index: 1;
+
+    /* margin-right: 55px; */
+    padding: 1.3rem 0;
+    /* background-color: rgb(1, 11, 202); */
+  }
+  .toggle::before {
+    content: "";
+    position: absolute;
+    top: 17px;
+    left: 0;
+
+
+    width: 100%;
+    height: 2px;
+    background-color: black;
+  }
+  .toggle.active::before {
+    transform: rotate(-45deg);
+    top: 19px;
+
+    transition: all .3s;
+  }
+
+  .Nav .toggle::after {
+    content: "";
+    position: absolute;
+    top: 27px;
+    left: 0;
+
+    
+    width: 100%;
+    height: 2px;
+    background-color: black;
+  }
+
+  .Nav .toggle.active::after {
+    transform: rotate(45deg);
+    top: 19px;
+
+    transition: all .3s;
+  }
+  .toggle span {
+    position: absolute;
+    top: 22px;
+    left: 0;
+
+    
+    width: 100%;
+    height: 2px;
+    background-color: black;
+  }
+  .toggle.active span {
+    transform: scale(0);
+  }
+}
+
+/* @media (max-width: 600px) {
+
+  .Nav ul {
+    display: block;
+    border: 2px solid black;
+    width: 120px;
+    text-align: center;
+  } 
+} */
+
+
+
+
+
+

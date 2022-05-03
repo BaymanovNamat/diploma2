@@ -19,7 +19,9 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="products" element={<Product />} />
           <Route path="/products/:productId" element={<Products/>}/>
+
           <Route path="/contacts" element={<Contacts />} />
+          
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Layout>
