@@ -14,14 +14,19 @@ function NavToggle(props) {
   //   }
   // };
 
-  return ( 
-    <div className={classes.NavToggle} >
-      <div className={classes.burger}>
-        <div className={props.className.toggle}>
+
+  // <div className={classes.NavToggle} >
+  //     <div className={classes.burger}>
+  //       <div className={props.className.toggle}>
           
-        </div>
-      </div>
-    </div>
+  //       </div>
+  //     </div>
+  //   </div>
+
+  return ( 
+      <button className={classes.NavToggle}>
+        &nbsp;
+      </button>
   );
 }
 

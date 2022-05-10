@@ -1,8 +1,8 @@
 @import "../../Nav/Nav.module.css";
 
 
-.NavToggle {
-  /* border: 3px solid green; */
+/* .NavToggle {
+  border: 3px solid green;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,7 +20,7 @@
   bottom: -15px;
   left: 0;
 
-  /* color: red; */
+  color: red;
   
 }
 
@@ -28,7 +28,7 @@
   color: rgb(230, 2, 2);
 }
 .NavToggle .burger:hover {
-  /* transition-property: padding; */
+  transition-property: padding;
   border-top-color: transparent;
 }
 
@@ -77,4 +77,28 @@
   } 
 }
 
+ */
 
+.NavToggle {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+
+  display: none;
+  /* width: 2.5em;
+  height: 1.5em; */
+  min-height: 61px;
+  padding: .5rem 1rem;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 90%; 
+
+  background-color: transparent;
+  border: none;
+
+}
+
+@media (max-width: 580px) {
+  .NavToggle {
+    display: block;
+  }
+}
