@@ -1,10 +1,7 @@
 // import { useState } from "react";
-import Logo from "../ui/Logo/Logo";
-import classes from"./Nav.module.css";
 import Navitem from "./Navitem/Navitem";
-import NavToggle from "./NavToggle/NavToggle";
 // import NavToggle from "./NavToggle/NavToggle";
-
+import classes from "./Nav.module.css";
 
 function Nav() {
 
@@ -27,31 +24,17 @@ function Nav() {
 
 
   return (
-    <nav className={classes.Nav}>
-      <div className={classes.container}>
-
-        <div className={classes.logo}>
-          <Logo/>
-        </div>
-
-        <ul className={classes.list}>
-          <Navitem url="/" active>
-            Home
-          </Navitem>
-          <Navitem url="/products">
-          Products
-          </Navitem>
-          <Navitem url="/contacts">
-          Contacts
-          </Navitem>
-        </ul>
-
-        <NavToggle/>
-
-
-      
-      </div>
-    </nav>
+    <ul className={classes.Nav}>
+    <Navitem url="/" active>
+      Home
+    </Navitem>
+    <Navitem url="/products">
+    Products
+    </Navitem>
+    <Navitem url="/contacts">
+    Contacts
+    </Navitem>
+  </ul>
   );
 }
 

@@ -3,7 +3,7 @@
 import classes from "./NavToggle.module.css";
 
 
-function NavToggle(props) {
+function NavToggle({callback}) {
 
 
   // const [buttonToggle, setButtonToggle] = useState();
@@ -24,7 +24,7 @@ function NavToggle(props) {
   //   </div>
 
   return ( 
-      <button className={classes.NavToggle}>
+      <button className={classes.NavToggle} onClick={callback}>
         &nbsp;
       </button>
   );
